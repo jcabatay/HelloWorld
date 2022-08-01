@@ -4,7 +4,7 @@
 ## About project
 > Introduction exercises. 
 
-##  Versiones necesarias
+##  Versions necesaries
 > Maven 3.8.5
  
 > Java 8
