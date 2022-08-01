@@ -4,10 +4,10 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class DockerGreetingApp {
+public class DockerApp {
 
 	public static void main(String[] args) {
-		SpringApplication.run(DockerGreetingApp.class, args);
+		SpringApplication.run(DockerApp.class, args);
 	}
 
 }
