@@ -1,5 +1,5 @@
 ## App
-- solid-principles
+- SolidPrinciples
 
 ### package meaning
 - Understanding SOLID Principles
