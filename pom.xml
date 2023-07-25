@@ -7,13 +7,13 @@
     <groupId>com.ascii274.helloworld</groupId>
     <artifactId>HelloWorld</artifactId>
     <packaging>pom</packaging>
-    <version>1.8</version>
+    <version>17</version>
     <name>HelloWorld</name>
     <description>Hello worlds</description>
 
     <!-- sub modules -->
     <modules>
-        <module>docker</module>
-        <module>solid-principles</module>
+        <module>Docker</module>
+        <module>SolidPrinciples</module>
     </modules>
 </project>
