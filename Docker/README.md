@@ -14,11 +14,11 @@
 ## Starting services
 
 * on terminal: docker-compose run -d
-* run: DockerApp
+* on IDE run: DockerApp
 
 ## Stopping services
 * on terminal: docker-compose down
-
+* on IDE stop DockerApp
 
 
 ## Endpoints
@@ -30,5 +30,6 @@
 - #### To execute services
 ```
  localhost:8762/hellodocker/v1/hello
- localhost:8762/hellodocker/v1/list-all
+ localhost:8762/hellodocker/v1/getall
+ localhost:8762/hellodocker/v1/add
 ```

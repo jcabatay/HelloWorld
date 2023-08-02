@@ -6,11 +6,12 @@ import org.springframework.boot.autoconfigure.domain.EntityScan;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
-@SpringBootApplication
-//@SpringBootApplication(scanBasePackages = {"com.ascii274.docker.repository"})
+//@SpringBootApplication
+@SpringBootApplication(scanBasePackages = {"com.ascii274.docker.repository"})
 @ComponentScan({"com.ascii274.docker","com.ascii274.docker.repository"})
 @EntityScan("com.ascii274.docker.entity")
 @EnableJpaRepositories("com.ascii274.docker.repository")
+
 
 public class DockerApp {
 
