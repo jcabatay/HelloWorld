@@ -8,10 +8,9 @@ import org.springframework.stereotype.Service;
 
 import java.util.List;
 
-//@NonNullApi
-@Service
+@Repository
 public interface CustomerRepository extends JpaRepository<Customer,Long> {
-//    Customer findByCustomerId(Long customerId);
+    Customer findByCustomerId(Long customerId);
     List<Customer> findAll();
     Customer save(Customer newCustomer);
 }
