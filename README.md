@@ -21,22 +21,5 @@
 * [SolidPrinciples](SolidPrinciples/README.md)<br>
   - Building the project
 
-
-## Building module.
-
-The below commandline: 
-
->* run in terminal ->  docker-compose up
-
-Download image phpmyadmin, mysql, run this images as container.
-
-[Insert data in mysql, see: customer_data.sql](Docker/customer_data.sql) 
-
-
-
-## Endpoint
-- 127.0.0.1:8080/hellodocker/v1/hello
-- 127.0.0.1:8080/hellodocker/v1/list-all
-
 ## License
 > MIT
