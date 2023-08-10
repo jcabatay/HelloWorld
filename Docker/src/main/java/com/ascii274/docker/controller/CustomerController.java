@@ -1,7 +1,7 @@
 package com.ascii274.docker.controller;
 
 import com.ascii274.docker.entity.Customer;
-import com.ascii274.docker.repository.CustomerRepositoryImp;
+import com.ascii274.docker.repository.CustomerServiceImpl;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -18,20 +18,20 @@ public class CustomerController {
     private static final Logger log = LoggerFactory.getLogger((CustomerController.class));
 
     @Autowired
-    CustomerRepositoryImp customerRepositoryImp;
+    CustomerServiceImpl customerServiceImp;
 
      //Functional
     @GetMapping("/search/{id}")
     public ResponseEntity<Customer> search(@PathVariable("id") Long  id){
         Customer newCustomer = new Customer();
-        newCustomer = customerRepositoryImp.findByCustomerId(id);
+        newCustomer = customerServiceImp.getCustomerById(id);
         return ResponseEntity.status(200).body(newCustomer);
     }
 
     // Functional
     @GetMapping(value = "/getall")
     public ResponseEntity<?> getAllCustomer() {
-        List<Customer> customers = customerRepositoryImp.findAll();
+        List<Customer> customers = customerServiceImp.getAllCustomer();
         return ResponseEntity.status(200).body(customers);
     }
 
@@ -39,7 +39,7 @@ public class CustomerController {
     // Functional
     @PostMapping("/add")
     public ResponseEntity<Customer> addCustomer(@RequestBody Customer newCustomer){
-        customerRepositoryImp.save(newCustomer);
+        customerServiceImp.save(newCustomer);
         return ResponseEntity.status(200).body(newCustomer);
     }
 

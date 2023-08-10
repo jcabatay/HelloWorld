@@ -44,7 +44,12 @@ public class Customer {
     @Column(name="country")
     private  String country;
 
-    public Customer(String customer_name){
+    public Customer(String customerName){
+        this.customerName = customerName;
+    }
+
+    public Customer(Long customerId, String customerName){
+        this.customerId = customerId;
         this.customerName = customerName;
     }
 
